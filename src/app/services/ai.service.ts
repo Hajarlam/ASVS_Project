@@ -27,7 +27,7 @@ export interface ChatOptions {
 @Injectable({ providedIn: 'root' })
 export class AiService {
   private isBrowser: boolean;
-  private ai = new GoogleGenAI({ apiKey: 'AIzaSyDLtw6tVK8z7FNZ160thXsbTrjFcxAodHk' });
+  private ai = new GoogleGenAI({ apiKey: 'AIzaSyACIQK1JIi_ARGqCpc4Ao_XS-xy8WB78_g' });
   private readonly modelCandidates = ['gemini-2.0-flash', 'gemini-2.5-flash'];
 
   constructor(@Inject(PLATFORM_ID) platformId: Object, private auth: AuthService) {
